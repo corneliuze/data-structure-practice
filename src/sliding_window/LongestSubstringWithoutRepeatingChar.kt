@@ -5,11 +5,10 @@ import kotlin.math.max
 object LongestSubstringWithoutRepeatingChar {
     @JvmStatic
     fun main(args: Array<String>) {
-        print()
         print(lengthOfLongestSubstring("abcabcbb"))
     }
 
-    fun lengthOfLongestSubstring(s: String): Int {
+    private fun lengthOfLongestSubstring(s: String): Int {
        val map = mutableMapOf<Char, Int>()
         var count = 0
         for (index in s.toCharArray().indices){

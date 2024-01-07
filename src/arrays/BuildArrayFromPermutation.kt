@@ -7,7 +7,7 @@ object BuildArrayFromPermutation {
         buildArray(intArrayOf(0,2,1,5,3,4))
     }
 
-    fun buildArray(nums: IntArray): IntArray {
+    private fun buildArray(nums: IntArray): IntArray {
         val res  = IntArray(nums.size)
         for(index in nums.indices) {
             res[index] = nums[nums[index]]
